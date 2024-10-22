@@ -36,9 +36,9 @@ model.fit(X,y,epochs=30,batch_size=6)# accuracy increases after 30 epochs or ove
 _, accuracy = model.evaluate(X,y) # output evaluation 2 => values accuracy and loss
 print('Accuracy: %.2f' % (accuracy*100))
 
-##model Save
-model_json=model.to_json()
-with open('model.json', 'w') as json_file:
-    json_file.write(model_json)
-model.save_weights('model.weights.h5') # 
-print("Saved model to disk")
+# ##model Save
+# model_json=model.to_json()
+# with open('model.json', 'w') as json_file:
+#     json_file.write(model_json)
+# model.save_weights('model.weights.h5') # 
+# print("Saved model to disk")
